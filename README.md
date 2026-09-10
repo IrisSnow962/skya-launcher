@@ -2,6 +2,12 @@
 
 A sleek, no-fuss game launcher for **Windows and macOS**. Skya automatically finds your games installed through **Steam** and the **Epic Games Launcher**, shows them in a clean grid, and launches them with one click. You can also add games manually or point it at a folder.
 
+## Downloads
+
+Head to the **[Releases](https://github.com/IrisSnow962/skya-launcher/releases)** page — every version from v1.0.0 to the latest is there, each with its own portable zip. No login required.
+
+**Latest build:** [Skya Launcher v1.3.2 (Windows portable)](https://github.com/IrisSnow962/skya-launcher/releases/download/v1.3.2/Skya-Launcher-1.3.2-portable.zip) — extract anywhere and run.
+
 ## Features
 
 - Automatic detection of Steam, Epic Games, and GameJolt installs (including Steam libraries on other drives)
