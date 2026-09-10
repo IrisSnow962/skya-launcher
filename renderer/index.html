@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:">
+  <title>Skya Launcher</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span class="logo">SKYA</span>
+      <span class="sub">launcher</span>
+    </div>
+    <input id="search" type="search" placeholder="Search games&hellip;" autocomplete="off" spellcheck="false">
+    <div class="actions">
+      <button id="theme-open" title="Change the look of Skya">Themes</button>
+      <button id="rescan" title="Look for installed Steam &amp; Epic games">Rescan</button>
+      <button id="add-folder" title="Point at a folder and find the games inside">Add Folder</button>
+      <button id="add-game" class="primary" title="Pick a game executable yourself">+ Add Game</button>
+    </div>
+  </header>
+
+  <main id="grid"></main>
+
+  <footer>
+    <span id="count"></span>
+    <div class="footer-right">
+      <span class="hint">Click a game to launch it</span>
+      <button id="sound-toggle" class="link-btn" title="Toggle UI sounds"></button>
+      <button id="exit-btn" class="link-btn" title="Exit Skya Launcher">Exit</button>
+    </div>
+  </footer>
+
+  <div id="theme-modal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2>Themes</h2>
+        <button id="theme-close" class="link-btn" title="Close" style="font-size:15px">&#10005;</button>
+      </div>
+      <div id="theme-swatches" class="swatches"></div>
+      <div class="editor-head">
+        <h3>Custom theme</h3>
+        <input id="theme-name" type="text" placeholder="Theme name" maxlength="24" spellcheck="false">
+      </div>
+      <div class="color-grid" id="color-grid"></div>
+      <p class="editor-hint">Changes preview live while you pick colors. Save Theme keeps it; closing this panel reverts.</p>
+      <div class="editor-actions">
+        <button id="theme-save" class="primary">Save Theme</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="sound.js"></script>
+  <script src="renderer.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>
